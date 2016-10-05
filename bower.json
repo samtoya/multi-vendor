@@ -1,0 +1,28 @@
+{
+  "name": "pricedrummer/multi-vendor",
+  "authors": [
+    "samtoya <devcujo3@gmail.com>",
+    "theo <theoshark22@gmail.com>"
+  ],
+  "description": "PriceDrummer mini multi-vendor platform.",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+<<<<<<< e47965afc3c755333ae18d171fe4456b469de169
+    "angular": "^1.5.8"
+=======
+    "angular": "^1.5.8",
+    "normalize-css": "^5.0.0",
+    "gulp": "^3.9.1"
+>>>>>>> Work in progress: Login/Register pages
+  }
+}
