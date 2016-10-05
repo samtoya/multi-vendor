@@ -119,10 +119,15 @@ body .middle-wrapper .icon-wrapper h3 {
 Form Wizard
 ===================================== */
 .information {
-  border: thin solid #0073a6;
+  border: 1px solid #005073;
   width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #0073a6;
+}
+.information p, .information li {
+  color: #FFF;
+  font-size: 1.3rem;
 }
 
 .form-reg-wrapper {
@@ -227,10 +232,12 @@ Form Wizard
 }
 .form-reg-wrapper .form-reg-body .setup-content h3 {
   background-color: #EDEDED;
-  padding: 15px;
+  padding: 20px;
   width: 795px;
   margin-left: 16px;
   margin-top: 0;
+  font-size: 1.9rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

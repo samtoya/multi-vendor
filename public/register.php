@@ -3,7 +3,13 @@
 <div class="container">
 	<div class="row">
 		<div class="information">
-			Information goes here.
+			<p>Get the following ready:</p>
+			<ul>
+				<li>Company Legal Name</li>
+				<li>Business Registration Number</li>
+				<li>Company Address</li>
+				<li>Contact Numbers</li>
+			</ul>
 		</div>
 		<div class="form-reg-wrapper">
 			<div class="form-reg-header">

@@ -141,20 +141,26 @@ body {
 /* =====================================
 Form Wizard
 ===================================== */
+$form-reg-width: 800px;
+
 .information {
-	border: thin solid $header-bg;
+	border: 1px solid darken($header-bg, 10);
 	width: 800px;
 	margin: 0 auto;
 	padding: 20px;
+	background-color: $header-bg;
+	p, li {
+		color: #FFF;
+		font-size: 1.3rem;
+	}
 }
-$form-reg-width: 800px;
+
 .form-reg-wrapper {
 	width: $form-reg-width;
 	margin: 20px auto 40px;
 	border: thin solid $header-bg;
 	.form-reg-header {
 		background-color: #FFF;
-		// box-shadow: 0 0 3px 1px #EDEDED;
 		border-bottom: thin solid $header-bg;
 		padding: 1px;
 		p {
@@ -258,10 +264,12 @@ $form-reg-width: 800px;
 		.setup-content {
 			h3 {
 				background-color: #EDEDED;
-				padding: 15px;
+				padding: 20px;
 				width: 795px;
 				margin-left: 16px;
 				margin-top: 0;
+				font-size: 1.9rem;
+				font-weight: 400;
 			}
 		}
 	}
