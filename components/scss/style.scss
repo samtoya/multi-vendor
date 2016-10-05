@@ -72,7 +72,6 @@ body {
 					margin-top: 5px;
 					input[type=submit] {
 						background-color: $form-button;
-						border: none;
 						width: 100px;
 						padding: 5px;
 						color: darken($form-button, 20);
@@ -101,7 +100,6 @@ body {
 			}
 		}
 	}
-
 	.register-info {
 		border: thin solid lighten($header-bg, 10);
 		width: $form-wrapper-width;
@@ -119,15 +117,23 @@ body {
 			}
 		}
 	}
-
 	.middle-wrapper {
-		background-color: #EEE;
+		// background-color: $header-bg;
+		// color: #FFF;
+		margin-top: 20px;
+		width: 100%;
+		// border: 2px solid darken($header-bg, 10);
 		.icon-wrapper {
 			text-align: center;
+			background-color: #FFF;
+			padding: 10px 0 40px;
+			box-shadow: 0 0 2px 1px #EEE;
+			border: thin solid $header-bg;
 			h1 {
-				border: thin solid darken($header-bg, 60);
+				// border: thin solid #FFF;
 				padding: 40px;
 				border-radius: 99999em;
+				font-size: 4em;
 			}
 			h3 {
 				font-size: 1.2em;
@@ -135,26 +141,32 @@ body {
 			}
 		}
 	}
-
 }
+
 
 /* =====================================
 Form Wizard
 ===================================== */
+$form-reg-width: 800px;
+
 .information {
-	border: thin solid $header-bg;
+	border: 1px solid darken($header-bg, 10);
 	width: 800px;
 	margin: 0 auto;
 	padding: 20px;
+	background-color: $header-bg;
+	p, li {
+		color: #FFF;
+		font-size: 1.3rem;
+	}
 }
-$form-reg-width: 800px;
+
 .form-reg-wrapper {
 	width: $form-reg-width;
 	margin: 20px auto 40px;
 	border: thin solid $header-bg;
 	.form-reg-header {
 		background-color: #FFF;
-		// box-shadow: 0 0 3px 1px #EDEDED;
 		border-bottom: thin solid $header-bg;
 		padding: 1px;
 		p {
@@ -235,6 +247,9 @@ $form-reg-width: 800px;
 					}
 				}
 			}
+			.form-radio-wrapper {
+				margin-top: 10px;
+			}
 			.form-button-wrapper {
 				margin-right: 10px;
 				text-align: right;
@@ -257,11 +272,14 @@ $form-reg-width: 800px;
 		}
 		.setup-content {
 			h3 {
-				background-color: #EDEDED;
-				padding: 15px;
-				width: 795px;
-				margin-left: 16px;
+				background-color: $header-bg;
+				padding: 20px;
+				width: 798px;
+				color: #FFF;
+				margin-left: 15px;
 				margin-top: 0;
+				font-size: 1.9rem;
+				font-weight: 400;
 			}
 		}
 	}

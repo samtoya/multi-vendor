@@ -4,7 +4,9 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12">
 			<div class="col-md-6 col-lg-6">
-				<!-- <?php # include 'svg/ghanaLow.svg'; ?> -->
+				<div class="map-area">
+					<?php include 'assets/svg/ghanaHigh.svg'; ?>
+				</div>
 			</div>
 			<div class="col-md-6 col-lg-6">
 				<div class="form-wrapper pull-right">
@@ -45,7 +47,7 @@
 			</div>
 		</div>
 
-		<section class="middle-wrapper">
+		<div class="row middle-wrapper">
 			<div class="col-lg-4 col-md-4">
 				<div class="icon-wrapper">
 					<h1 class="glyphicon glyphicon-cog"></h1>
@@ -66,8 +68,7 @@
 					<h3>List or Sell</h3>
 				</div>
 			</div>
-		</section>
-	</div>
-</div> <!-- end container div -->
+		</div>
+	</div> <!-- end container div -->
 
-<?php require '../include/footer.php'; ?>
+	<?php require '../include/footer.php'; ?>

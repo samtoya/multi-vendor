@@ -41,4 +41,11 @@ $(document).ready(function () {
   });
 
   $('div.setup-panel div a.btn-primary').trigger('click');
+
+  // Registration URL
+  $('#website-wrapper').css('display', 'none');
+  $('#website').click(function(event) {
+    console.log('#website');
+  });
+
 });

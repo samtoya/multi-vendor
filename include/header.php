@@ -25,4 +25,6 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
+	<!-- PHP Configuration -->
+	<?php # ini_set('short_open_tag', 0); ?>
 	<?php require '../include/navigation.php'; ?>

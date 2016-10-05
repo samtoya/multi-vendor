@@ -57,7 +57,6 @@ body .form-wrapper .form-wrapper-body form .form-button-wrapper {
 }
 body .form-wrapper .form-wrapper-body form .form-button-wrapper input[type=submit] {
   background-color: #FABA00;
-  border: none;
   width: 100px;
   padding: 5px;
   color: #946e00;
@@ -100,15 +99,20 @@ body .register-info p a {
   color: #946e00;
 }
 body .middle-wrapper {
-  background-color: #EEE;
+  margin-top: 20px;
+  width: 100%;
 }
 body .middle-wrapper .icon-wrapper {
   text-align: center;
+  background-color: #FFF;
+  padding: 10px 0 40px;
+  box-shadow: 0 0 2px 1px #EEE;
+  border: thin solid #0073a6;
 }
 body .middle-wrapper .icon-wrapper h1 {
-  border: thin solid black;
   padding: 40px;
   border-radius: 99999em;
+  font-size: 4em;
 }
 body .middle-wrapper .icon-wrapper h3 {
   font-size: 1.2em;
@@ -119,10 +123,15 @@ body .middle-wrapper .icon-wrapper h3 {
 Form Wizard
 ===================================== */
 .information {
-  border: thin solid #0073a6;
+  border: 1px solid #005073;
   width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #0073a6;
+}
+.information p, .information li {
+  color: #FFF;
+  font-size: 1.3rem;
 }
 
 .form-reg-wrapper {
@@ -206,6 +215,9 @@ Form Wizard
 .form-reg-wrapper .form-reg-body form .form-input-wrapper input:focus, .form-reg-wrapper .form-reg-body form .form-input-wrapper textarea:focus {
   border: thin solid #eee;
 }
+.form-reg-wrapper .form-reg-body form .form-radio-wrapper {
+  margin-top: 10px;
+}
 .form-reg-wrapper .form-reg-body form .form-button-wrapper {
   margin-right: 10px;
   text-align: right;
@@ -226,11 +238,14 @@ Form Wizard
   background-color: #ffc315;
 }
 .form-reg-wrapper .form-reg-body .setup-content h3 {
-  background-color: #EDEDED;
-  padding: 15px;
-  width: 795px;
-  margin-left: 16px;
+  background-color: #0073a6;
+  padding: 20px;
+  width: 798px;
+  color: #FFF;
+  margin-left: 15px;
   margin-top: 0;
+  font-size: 1.9rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

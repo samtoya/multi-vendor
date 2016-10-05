@@ -3,7 +3,13 @@
 <div class="container">
 	<div class="row">
 		<div class="information">
-			Information goes here.
+			<p>Get the following ready:</p>
+			<ul>
+				<li>Company Legal Name</li>
+				<li>Business Registration Number</li>
+				<li>Company Address</li>
+				<li>Contact Numbers</li>
+			</ul>
 		</div>
 		<div class="form-reg-wrapper">
 			<div class="form-reg-header">
@@ -93,10 +99,15 @@
 									<input type="password" name="confirm_password" required="required" />
 								</div>
 
-								<div class="form-input-wrapper">
+								<div class="form-radio-wrapper">
 									<label class="control-label">Do you have a website?</label>
 									<input type="radio" name="website" id="website" /> Yes
-									<input type="radio" name="website" id="website" /> No
+									<input type="radio" selected name="website" id="website" /> No
+								</div>
+
+								<div class="form-input-wrapper" id="website-wrapper">
+									<label for="url">Website</label>
+									<input type="url" name="url" id="url">
 								</div>
 
 								<div class="form-button-wrapper">
@@ -110,6 +121,7 @@
 						<h3>Retailer Approval</h3>
 						<div class="col-xs-9 col-md-offset-2">
 							<div class="col-md-12">
+								<p>Show the end user all the information they filled out for final approval.</p>
 								<div class="form-button-wrapper">
 									<input type="submit" value="Create Account">
 								</div>
