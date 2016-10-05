@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- end: CORE CSS -->
 	<link rel="shortcut icon" href="favicon.ico" />
+	<!-- Google ReCaptcha -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<?php require '../include/navigation.php'; ?>
