@@ -246,7 +246,7 @@ $form-reg-width: 800px;
 						border: thin solid #eee;
 					}
 				}
-			}
+		}
 			.form-radio-wrapper {
 				margin-top: 10px;
 			}
@@ -255,7 +255,7 @@ $form-reg-width: 800px;
 				text-align: right;
 				margin-top: 5px;
 				margin-bottom: 20px;
-				input[type=submit] {
+				input[type=submit], button {
 					background-color: $form-button;
 					border: none;
 					width: 100px;

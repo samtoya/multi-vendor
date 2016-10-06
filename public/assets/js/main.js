@@ -3,14 +3,14 @@
 $(document).ready(function () {
   var navListItems = $('div.setup-panel div a'),
           allWells = $('.setup-content'),
-          allNextBtn = $('.nextBtn');
+        allNextBtn = $('.nextBtn');
 
-  allWells.hide();
+  allWells.show();
 
   navListItems.click(function (e) {
       e.preventDefault();
       var $target = $($(this).attr('href')),
-              $item = $(this);
+            $item = $(this);
 
       if (!$item.hasClass('disabled')) {
           navListItems.removeClass('btn-primary').addClass('btn-default');
@@ -23,12 +23,12 @@ $(document).ready(function () {
 
   allNextBtn.click(function(){
       var curStep = $(this).closest(".setup-content"),
-          curStepBtn = curStep.attr("id"),
+        curStepBtn = curStep.attr("id"),
           nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
           curInputs = curStep.find("input[type='text'],input[type='url']"),
           isValid = true;
 
-      $(".form-group").removeClass("has-error");
+      $(".form-input-wrapper").removeClass("has-error");
       for(var i=0; i<curInputs.length; i++){
           if (!curInputs[i].validity.valid){
               isValid = false;
@@ -43,6 +43,7 @@ $(document).ready(function () {
   $('div.setup-panel div a.btn-primary').trigger('click');
 
   // Registration URL
+  // Hidden by default
   $('#website-wrapper').css('display', 'none');
   $('#website').click(function(event) {
     console.log('#website');

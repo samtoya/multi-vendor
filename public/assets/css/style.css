@@ -224,7 +224,7 @@ Form Wizard
   margin-top: 5px;
   margin-bottom: 20px;
 }
-.form-reg-wrapper .form-reg-body form .form-button-wrapper input[type=submit] {
+.form-reg-wrapper .form-reg-body form .form-button-wrapper input[type=submit], .form-reg-wrapper .form-reg-body form .form-button-wrapper button {
   background-color: #FABA00;
   border: none;
   width: 100px;
@@ -234,7 +234,7 @@ Form Wizard
   font-size: 1rem;
   border-radius: 3px;
 }
-.form-reg-wrapper .form-reg-body form .form-button-wrapper input[type=submit]:hover {
+.form-reg-wrapper .form-reg-body form .form-button-wrapper input[type=submit]:hover, .form-reg-wrapper .form-reg-body form .form-button-wrapper button:hover {
   background-color: #ffc315;
 }
 .form-reg-wrapper .form-reg-body .setup-content h3 {
