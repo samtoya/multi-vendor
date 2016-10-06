@@ -11,6 +11,9 @@
 		<!-- start: CORE JAVASCRIPTS  -->
 		<!-- end: CORE JAVASCRIPTS  -->
 		<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/js/app.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/subview.js"></script>
+		<script src="assets/js/form-wizard.js"></script>
 	</body>
 	</html>
