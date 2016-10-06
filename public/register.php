@@ -40,17 +40,17 @@
 
 								<div class="form-input-wrapper">
 									<label class="control-label">Company Legal Name</label>
-									<input type="text" required="required" />
+									<input type="text" />
 								</div>
 
 								<div class="form-input-wrapper">
 									<label class="control-label">Company Registration Number</label>
-									<input type="text" required="required" />
+									<input type="text" />
 								</div>
 
 								<div class="form-input-wrapper">
 									<label class="control-label">Contact Number</label>
-									<input type="text" required="required" />
+									<input type="text" />
 								</div>
 
 								<div class="form-input-wrapper">
@@ -86,17 +86,17 @@
 							<div class="col-md-12">
 								<div class="form-input-wrapper">
 									<label class="control-label">Email Address</label>
-									<input type="email" name="email" required="required" />
+									<input type="email" name="email" />
 								</div>
 
 								<div class="form-input-wrapper">
 									<label class="control-label">Password</label>
-									<input type="password" name="password" required="required" />
+									<input type="password" name="password" />
 								</div>
 
 								<div class="form-input-wrapper">
 									<label class="control-label">Confirm Password</label>
-									<input type="password" name="confirm_password" required="required" />
+									<input type="password" name="confirm_password" />
 								</div>
 
 								<div class="form-radio-wrapper">
