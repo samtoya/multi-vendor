@@ -86,7 +86,7 @@ body {
 			}
 		}
 		.form-wrapper-footer {
-			border-top: thin solid #EEE;
+			border-top: thin solid lighten($header-bg, 10);
 			padding-top: 8px;
 			margin-bottom: 0;
 			p {
@@ -109,6 +109,7 @@ body {
 			font-size: 1.4rem;
 			margin: 0;
 			padding: 0;
+			color: #d3d3d3;
 		}
 		p {
 			font-size: 1.3rem;
@@ -151,7 +152,7 @@ $form-reg-width: 800px;
 
 .information {
 	border: 1px solid darken($header-bg, 10);
-	width: 800px;
+	// width: 800px;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: $header-bg;
@@ -162,9 +163,9 @@ $form-reg-width: 800px;
 }
 
 .form-reg-wrapper {
-	width: $form-reg-width;
+	// width: $form-reg-width;
 	margin: 20px auto 40px;
-	border: thin solid $header-bg;
+	// border: thin solid $header-bg;
 	.form-reg-header {
 		background-color: #FFF;
 		border-bottom: thin solid $header-bg;
@@ -230,7 +231,7 @@ $form-reg-width: 800px;
 			.form-input-wrapper {
 				// border: 1px solid #000;
 				label {
-					width: $form-reg-width / 1;
+					// width: $form-reg-width / 1;
 					margin-top: 5px;
 					text-align: left;
 					font-weight: 200;
@@ -246,7 +247,7 @@ $form-reg-width: 800px;
 						border: thin solid #eee;
 					}
 				}
-		}
+			}
 			.form-radio-wrapper {
 				margin-top: 10px;
 			}
@@ -286,4 +287,57 @@ $form-reg-width: 800px;
 	}
 }
 
+/* ======================================
+Smart Wizard
+====================================== */
+#wizard {
+	.stepContainer {
+		.content {
+			.StepTitle {
+				background-color: $header-bg;
+				padding: 20px;
+				color: #FFF;
+				margin-top: 0;
+				font-weight: 400;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.btn-custom {
+	background-color: $form-button;
+	width: 100px;
+	padding: 5px;
+	color: darken($form-button, 20);
+	border: thin solid darken($form-button, 5);
+	font-size: 1rem;
+	border-radius: 3px;
+	&:hover {
+		background-color: lighten($form-button, 5);
+	}
+}
+
+.tac {
+	color: darken($form-button, 20);
+	font-weight: 200;
+	border-bottom: thin dotted $form-button;
+	&:hover {
+		color: darken($form-button, 30);
+		border-color: darken($form-button, 30);;
+	}
+}
+
+/* ============================================
+Plugin Over-ride Styles
+============================================ */
+.swMain > ul li > a.selected .stepNumber,
+.swMain > ul li > a.selected:before, .swMain li > a.done:before {
+	border-color: $header-bg;
+	border-radius: 0;
+}
+
+.wizard-wrapper {
+	border: thin solid $header-bg;
+}
 

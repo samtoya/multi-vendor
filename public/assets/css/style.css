@@ -68,7 +68,7 @@ body .form-wrapper .form-wrapper-body form .form-button-wrapper input[type=submi
   background-color: #ffc315;
 }
 body .form-wrapper .form-wrapper-footer {
-  border-top: thin solid #EEE;
+  border-top: thin solid #0096d9;
   padding-top: 8px;
   margin-bottom: 0;
 }
@@ -91,6 +91,7 @@ body .register-info h4 {
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
+  color: #d3d3d3;
 }
 body .register-info p {
   font-size: 1.3rem;
@@ -124,7 +125,6 @@ Form Wizard
 ===================================== */
 .information {
   border: 1px solid #005073;
-  width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: #0073a6;
@@ -135,9 +135,7 @@ Form Wizard
 }
 
 .form-reg-wrapper {
-  width: 800px;
   margin: 20px auto 40px;
-  border: thin solid #0073a6;
 }
 .form-reg-wrapper .form-reg-header {
   background-color: #FFF;
@@ -199,7 +197,6 @@ Form Wizard
   color: #FFF;
 }
 .form-reg-wrapper .form-reg-body form .form-input-wrapper label {
-  width: 800px;
   margin-top: 5px;
   text-align: left;
   font-weight: 200;
@@ -246,6 +243,54 @@ Form Wizard
   margin-top: 0;
   font-size: 1.9rem;
   font-weight: 400;
+}
+
+/* ======================================
+Smart Wizard
+====================================== */
+#wizard .stepContainer .content .StepTitle {
+  background-color: #0073a6;
+  padding: 20px;
+  color: #FFF;
+  margin-top: 0;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  background-color: #FABA00;
+  width: 100px;
+  padding: 5px;
+  color: #946e00;
+  border: thin solid #e1a700;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+.btn-custom:hover {
+  background-color: #ffc315;
+}
+
+.tac {
+  color: #946e00;
+  font-weight: 200;
+  border-bottom: thin dotted #FABA00;
+}
+.tac:hover {
+  color: #614800;
+  border-color: #614800;
+}
+
+/* ============================================
+Plugin Over-ride Styles
+============================================ */
+.swMain > ul li > a.selected .stepNumber,
+.swMain > ul li > a.selected:before, .swMain li > a.done:before {
+  border-color: #0073a6;
+  border-radius: 0;
+}
+
+.wizard-wrapper {
+  border: thin solid #0073a6;
 }
 
 /*# sourceMappingURL=style.css.map */

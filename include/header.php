@@ -18,12 +18,12 @@
 	<meta content="" name="author" />
 	<!-- end: META -->
 	<!-- start: MAIN CSS -->
-	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- end: CORE CSS -->
 	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- start: CSS REQUIRED FOR SUBVIEW CONTENTS -->
 	<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.theme.css">
