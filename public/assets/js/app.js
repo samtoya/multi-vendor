@@ -67,7 +67,7 @@ $(document).ready(function () {
     "map": "ghanaHigh",
     "getAreasFromMap": true
   },
-
+      
   /**
    * create areas settings
    * autoZoom set to true means that the map will zoom-in when clicked on the area
