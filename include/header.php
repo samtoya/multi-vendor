@@ -36,6 +36,7 @@
 	<link rel="stylesheet" href="assets/plugins/DataTables/media/css/DT_bootstrap.css">
 	<link rel="stylesheet" href="assets/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css">
 	<link rel="stylesheet" href="assets/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css">
+	<link rel="stylesheet" href="../bower_components/ammap/dist/ammap/ammap.css">
 	<!-- end: CSS REQUIRED FOR THIS SUBVIEW CONTENTS-->
 	<!-- Google ReCaptcha -->
 	<script src='https://www.google.com/recaptcha/api.js'></script>
