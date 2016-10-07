@@ -21,6 +21,9 @@
 		<script src="assets/js/subview-examples.js"></script>
 		<!-- end: JAVASCRIPTS REQUIRED FOR SUBVIEW CONTENTS -->
 		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="../bower_components/ammap/dist/ammap/ammap.js"></script>
+		<script src="assets/js/ghanaLow.js"></script>
+		<script src="assets/js/ghanaHigh.js"></script>
 		<script src="assets/plugins/mixitup/src/jquery.mixitup.js"></script>
 		<script src="assets/plugins/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
 		<script src="assets/js/form-wizard.js"></script>

@@ -4,8 +4,10 @@
 	<div class="row">
 		<div class="col-lg-12 col-md-12">
 			<div class="col-md-6 col-lg-6">
+				
 				<div class="map-area">
-					<?php include 'assets/svg/ghanaHigh.svg'; ?>
+					<!-- <?php # include 'assets/svg/ghanaHigh.svg'; ?> -->
+					<div id="mapdiv" style="width: 800px; height: 360px;"></div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-6">
