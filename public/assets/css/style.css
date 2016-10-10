@@ -2,7 +2,7 @@
 Login Form
 ==================================================*/
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -131,7 +131,7 @@ Form Wizard
 }
 .information p, .information li {
   color: #FFF;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .form-reg-wrapper {
@@ -223,7 +223,7 @@ Form Wizard
 }
 .form-reg-wrapper .form-reg-body form .form-button-wrapper input[type=submit], .form-reg-wrapper .form-reg-body form .form-button-wrapper button {
   background-color: #FABA00;
-  border: none;
+  border: 0;
   width: 100px;
   padding: 5px;
   color: #946e00;
@@ -291,6 +291,169 @@ Plugin Over-ride Styles
 
 .wizard-wrapper {
   border: thin solid #0073a6;
+}
+
+/* ======================================
+Dashboard
+====================================== */
+.container-fluid .row nav .menu-wrapper {
+  width: 85px;
+  margin: 0;
+  position: fixed;
+  top: 63px;
+  left: 0px;
+  background-color: #0073a6;
+  padding: 0;
+}
+.container-fluid .row nav .menu-wrapper ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a {
+  color: #FFFFFF;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a li {
+  border-bottom: thin solid #006fa1;
+  padding: 15px;
+  color: #FFFFFF;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a li:hover {
+  background-color: #002c40;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a li i {
+  text-align: center;
+  display: block;
+  margin: 0;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a li span {
+  text-align: center;
+  display: block;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+.container-fluid .row nav .menu-wrapper ul.menu a li.active {
+  background-color: #002c40;
+}
+.container-fluid .row .content-wrapper {
+  box-shadow: 0 0 3px 1px #EEEEEE;
+  padding: 20px 15px;
+}
+
+/*===============================================
+Widget
+===============================================*/
+.widget {
+  background-color: #FFFFFF;
+  border: thin solid #005073;
+  margin-top: 10px;
+}
+.widget .widget-header {
+  background-color: #0073a6;
+  padding: 3px 10px;
+  color: #FFFFFF;
+}
+.widget .widget-body .sub-title {
+  padding-left: 10px;
+  background-color: #003e5a;
+  margin: 0 0 15px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+.widget .widget-body .product-chooser .product-chooser-item {
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  border: thin solid #EFEFEF;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.widget .widget-body .product-chooser .product-chooser-item img {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
+.widget .widget-body .product-chooser .product-chooser-item .widget-info-desc .title {
+  display: block;
+  margin: 15px auto 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.widget .widget-body .product-chooser .product-chooser-item .widget-info-desc .description {
+  font-size: 1.1rem;
+}
+.widget .widget-body .product-chooser .product-chooser-item .widget-info-desc input[type=radio] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+.widget .widget-body .product-chooser .product-chooser-item.selected {
+  border: 2px solid #428BCA;
+  background: #f3fbff;
+  padding: 8px;
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+/*=============================================
+Box
+==============================================*/
+.box {
+  border: thin solid #005073;
+  margin: 0;
+  padding: 0;
+}
+.box .box-header {
+  background-color: #0073a6;
+  padding: 1px 10px;
+  color: #FFFFFF;
+}
+.box .box-body table {
+  color: #333333;
+  font-size: .9em;
+  font-weight: 300;
+  text-align: left;
+  line-height: 30px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+}
+.box .box-body thead tr:first-child {
+  background: #005073;
+  color: #FFFFFF;
+  border: none;
+}
+.box .box-body th {
+  font-weight: bold;
+}
+.box .box-body th:first-child, .box .box-body td:first-child {
+  padding: 0 15px 0 20px;
+}
+.box .box-body tbody tr:hover {
+  background-color: #fdfeff;
+}
+.box .box-body tbody tr:last-child td {
+  border: none;
+}
+.box .box-body tbody td {
+  border-bottom: 1px solid #DDDDDD;
+}
+.box .box-body td:last-child {
+  text-align: right;
+  padding-right: 10px;
+}
+.box .box-body .button {
+  color: #AAAAAA;
+  cursor: pointer;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
 					<li>Company Address</li>
 					<li>Contact Numbers</li>
 				</ul>
-			</div>
+			</div> <!-- end information div -->
 		</div>
 	</div>
 

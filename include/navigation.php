@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">PriceDrummer</a>
+<!--      <a class="navbar-brand" href="index.php"><img src="assets/images/pxdm_logo_black.png" alt="" width="200" style="margin-top: -15px;"></a>-->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

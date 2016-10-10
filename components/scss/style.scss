@@ -5,16 +5,17 @@ $form-wrapper-width: 430px;
 $form-button: #FABA00;
 $header-bg: rgb(0, 115, 166);
 
-
 /*==================================================
 Login Form
 ==================================================*/
 body {
-	font-family: Verdana, Geneva, sans-serif;
+	//font-family: Verdana, Geneva, sans-serif;
+	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	.navigation {
 		background-color: $header-bg;
+		//background-color: darken($header-bg, 50);
 		border-radius: 0;
 		.container {
 			.navbar-header {
@@ -158,7 +159,7 @@ $form-reg-width: 800px;
 	background-color: $header-bg;
 	p, li {
 		color: #FFF;
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 }
 
@@ -258,7 +259,7 @@ $form-reg-width: 800px;
 				margin-bottom: 20px;
 				input[type=submit], button {
 					background-color: $form-button;
-					border: none;
+					border: 0;
 					width: 100px;
 					padding: 5px;
 					color: darken($form-button, 20);
@@ -341,3 +342,180 @@ Plugin Over-ride Styles
 	border: thin solid $header-bg;
 }
 
+/* ======================================
+Dashboard
+====================================== */
+.container-fluid {
+	.row {
+		nav {
+			.menu-wrapper {
+				width: 85px;
+				margin: 0;
+				position: fixed;
+				top: 63px;
+				left: 0px;
+				//background-color: darken($header-bg, 50);
+				background-color: $header-bg;
+				padding: 0;
+				ul.menu {
+					list-style: none;
+					margin: 0;
+					padding: 0;
+					a {
+						color: #FFFFFF;
+						li {
+							border-bottom: thin solid darken($header-bg, 1);
+							padding: 15px;
+							color: #FFFFFF;
+							&:hover {
+								background-color: darken($header-bg, 20);
+							}
+							i {
+								text-align: center;
+								display: block;
+								margin: 0;
+							}
+							span {
+								text-align: center;
+								display: block;
+								margin-top: 0;
+								font-size: 1.1rem;
+							}
+						}
+						li.active {
+							background-color: darken($header-bg, 20);
+						}
+					}
+				}
+			}
+		}
+		.content-wrapper {
+			box-shadow: 0 0 3px 1px #EEEEEE;
+			padding: 20px 15px;
+		}
+	}
+}
+
+/*===============================================
+Widget
+===============================================*/
+.widget {
+	background-color: #FFFFFF;
+	border: thin solid darken($header-bg, 10);
+	margin-top: 10px;
+	.widget-header {
+		background-color: $header-bg;
+		padding: 3px 10px;
+		color: #FFFFFF;
+	}
+	.widget-body {
+		//padding: 3px 10px;
+		.sub-title {
+			padding-left: 10px;
+			background-color: darken($header-bg, 15);
+			margin: 0 0 15px 0;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			color: #FFFFFF;
+			font-size: 1.3rem;
+		}
+		.product-chooser {
+			.product-chooser-item {
+				padding: 8px;
+				border-radius: 2px;
+				cursor: pointer;
+				position: relative;
+				border: thin solid #EFEFEF;
+				margin-bottom: 10px;
+				margin-left: 10px;
+				margin-right: 10px;
+				img {
+					width: 80px;
+					display: block;
+					margin: 0 auto;
+				}
+				.widget-info-desc {
+					.title {
+						display: block;
+						margin: 15px auto 5px;
+						font-weight: bold;
+						font-size: 1.2rem;
+						text-transform: uppercase;
+					}
+					.description {
+						font-size: 1.1rem;
+					}
+					input[type=radio] {
+						position: absolute;
+						left: 0;
+						top: 0;
+						visibility: hidden;
+					}
+				}
+			}
+			.product-chooser-item.selected {
+				border: 2px solid #428BCA;
+				background: lighten($header-bg, 65);
+				padding: 8px;
+				filter: alpha(opacity=100);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/*=============================================
+Box
+==============================================*/
+.box {
+	border: thin solid darken($header-bg, 10);
+	margin: 0;
+	padding: 0;
+	.box-header {
+		background-color: $header-bg;
+		padding: 1px 10px;
+		color: #FFFFFF;
+	}
+	.box-body {
+		table {
+			color: #333333;
+			font-size: .9em;
+			font-weight: 300;
+			text-align: left;
+			line-height: 30px;
+			border-collapse: separate;
+			border-spacing: 0;
+			//border: 2px solid #ED1C40;
+			//margin: 50px auto;
+			width: 100%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .16);
+			border-radius: 2px;
+		}
+
+		thead tr:first-child {
+			background: darken($header-bg, 10);
+			color: #FFFFFF;
+			border: none;
+		}
+
+		th { font-weight: bold; }
+		th:first-child, td:first-child { padding: 0 15px 0 20px; }
+
+		//thead tr:last-child th { border-bottom: 0 solid #DDDDDD; }
+
+		tbody tr:hover { background-color: lighten($header-bg, 67); }
+		tbody tr:last-child td { border: none; }
+		tbody td { border-bottom: 1px solid #DDDDDD; }
+
+		td:last-child {
+			text-align: right;
+			padding-right: 10px;
+		}
+
+		.button {
+			color: #AAAAAA;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+	}
+}
