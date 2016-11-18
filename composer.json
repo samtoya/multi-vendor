@@ -1,0 +1,12 @@
+{
+    "name": "root/multi-vendor",
+    "require": {
+        "fzaninotto/faker": "^1.6"
+    },
+    "authors": [
+        {
+            "name": "samtoya",
+            "email": "devcujo3@gmail.com"
+        }
+    ]
+}

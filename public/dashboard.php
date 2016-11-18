@@ -1,59 +1,26 @@
 <?php require '../include/header.php'; ?>
 
+<?php 
+    $faker = Faker\Factory::create();
+    $categories = ['Mobile Phones', 'Tablets', 'Camera', 'TVs', 'Audio Speakers', 'Cars', 'Computers'];
+?>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <nav class="col-md-1 col-lg-1">
-                    <div class="menu-wrapper">
-                        <ul class="menu">
-                            <a href="dashboard.php">
-                                <li class="active">
-                                    <i class="fa fa-home fa-2x"></i><br>
-                                    <span>Home</span>
-                                </li>
-                            </a>
-                            <a href="budget.php">
-                                <li>
-                                    <i class="fa fa-money fa-2x"></i><br>
-                                    <span>Set a Budget</span>
-                                </li>
-                            </a>
-                            <a href="list_product.php">
-                                <li>
-                                    <i class="fa fa-plus fa-2x"></i><br>
-                                    <span>List Products</span>
-                                </li>
-                            </a>
-                            <a href="overview.php">
-                                <li>
-                                    <i class="fa fa-database fa-2x"></i><br>
-                                    <span>Products Overview</span>
-                                </li>
-                            </a>
-                            <a href="invoice.php">
-                                <li>
-                                    <i class="fa fa-file-o fa-2x"></i><br>
-                                    <span>Invoices</span>
-                                </li>
-                            </a>
-                            <a href="setting.php">
-                                <li>
-                                    <i class="fa fa-gear fa-2x"></i><br>
-                                    <span>Settings</span>
-                                </li>
-                            </a>
-                        </ul>
-                    </div> <!-- end menu wrapper -->
-
+                    <?php include '../include/dashboard_navigation.php'; ?>
                 </nav> <!-- end navigation -->
 
-                <div class="col-md-11 col-lg-11 no-margin no-padding">
+                <div class="col-md-11 col-lg-11" style="margin-left: -45px;">
                     <div class="col-md-12 col-lg-12">
                         <div class="row">
                             <div class="col-md-6 col-lg-6">
                                 <div style="margin-bottom: 10px;" class="box box-wrapper">
                                     <div class="box-header">
                                         <h4>Products</h4>
+                                        <a class="link_va" href="overview.php">View all</a>
+                                        <a href="" class="form-btn"><i class="fa fa-plus"> List a product</i></a>
                                     </div>
                                     <div class="box-body">
                                         <table>
@@ -67,27 +34,16 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>PXDM0000001</td>
-                                                <td>Samsung</td>
-                                                <td>GH&cent;20000</td>
-                                                <td><?php echo date('Y-m-d h:i:sa', time()); ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>PXDM0000002</td>
-                                                <td>Huawei</td>
-                                                <td>GH&cent;750</td>
-                                                <td><?php echo date('Y-m-d h:i:sa', time()); ?></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>PXDM0000003</td>
-                                                <td>Apple</td>
-                                                <td>GH&cent;960</td>
-                                                <td><?php echo date('Y-m-d h:i:sa', time()); ?></td>
-                                            </tr>
+                                            <?php $num = rand(1, count($categories)); ?>
+                                            <?php for ($i = 0; $i < 3; $i++): ?>
+                                                <tr>
+                                                    <td><?php echo $i; ?></td>
+                                                    <td>PXDM0000-<?php echo $i; ?></td>
+                                                    <td> <?php echo $categories[$num - 1]; ?></td>
+                                                    <td>GH&cent; <?php echo $faker->numberBetween(500, 10000); ?></td>
+                                                    <td><?php echo $faker->date($format = 'Y-m-d', $max = 'now');?></td>
+                                                </tr>
+                                            <?php endfor; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -96,6 +52,7 @@
                                 <div class="box box-wrapper">
                                     <div class="box-header">
                                         <h4>Invoices</h4>
+                                        <a class="link_va" href="invoice.php">View all</a>
                                     </div>
                                     <div class="box-body">
                                         <table>
@@ -142,6 +99,7 @@
                                     </div>
                                     <div class="box-body">
                                         <p>Owner information goes here.</p>
+                                        <p>Description of the retailer including image, addeess, phone, and some additional widget to make it look nice.</p>
                                     </div>
                                 </div>
                             </div>

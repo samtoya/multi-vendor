@@ -9,13 +9,15 @@
         <span class="icon-bar"></span>
       </button>
 <!--      <a class="navbar-brand" href="index.php"><img src="assets/images/pxdm_logo_black.png" alt="" width="200" style="margin-top: -15px;"></a>-->
+      <a class="navbar-brand" href="index.php">PriceDrummer Retailer</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <!-- <li><a href="index.php">Login</a></li> -->
-        <!-- <li><a href="register.php">Register</a></li> -->
+         <li><a href="index.php">Login</a></li>
+         <li><a href="register.php">Register</a></li>
+         <li><a href="dashboard.php">Dashboard</a></li>
         <!-- <li><a href="wizard.php">Wizard</a></li> -->
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>

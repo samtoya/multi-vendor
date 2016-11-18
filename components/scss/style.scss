@@ -13,7 +13,9 @@ body {
 	font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 	.navigation {
+
 		background-color: $header-bg;
 		//background-color: darken($header-bg, 50);
 		border-radius: 0;
@@ -352,7 +354,7 @@ Dashboard
 				width: 85px;
 				margin: 0;
 				position: fixed;
-				top: 63px;
+				top: 70px;
 				left: 0px;
 				//background-color: darken($header-bg, 50);
 				background-color: $header-bg;
@@ -410,6 +412,7 @@ Widget
 	}
 	.widget-body {
 		//padding: 3px 10px;
+		@extend .cf;
 		.sub-title {
 			padding-left: 10px;
 			background-color: darken($header-bg, 15);
@@ -419,8 +422,13 @@ Widget
 			color: #FFFFFF;
 			font-size: 1.3rem;
 		}
-		.product-chooser {
-			.product-chooser-item {
+		.budget-chooser {
+			    width: 50%;
+			    float: left;
+			    padding: 0;
+			    margin: 0;
+
+			.budget-chooser-item {
 				padding: 8px;
 				border-radius: 2px;
 				cursor: pointer;
@@ -430,7 +438,7 @@ Widget
 				margin-left: 10px;
 				margin-right: 10px;
 				img {
-					width: 80px;
+					width: 68px;
 					display: block;
 					margin: 0 auto;
 				}
@@ -453,17 +461,80 @@ Widget
 					}
 				}
 			}
-			.product-chooser-item.selected {
-				border: 2px solid #428BCA;
+			.budget-chooser-item.selected {
+				border: 1px solid #428BCA;
 				background: lighten($header-bg, 65);
 				padding: 8px;
 				filter: alpha(opacity=100);
 				opacity: 1;
 			}
 		}
+		ul.money_container {
+			width: 100%;
+			// margin: 0;
+			padding: 0;
+			@extend .cf;
+			li {
+				list-style: none;
+				float: left;
+				width: 32.7%;
+				display: block;
+				margin-bottom: 10px;
+				.money_wrapper {
+					// clear: both;
+					// margin: 0px;
+					// color: #FFFFFF;
+					// border: thin solid #EFEFEF;
+					// padding: 10px;
+					// position: relative;
+					&:first-child {
+						margin-left: 10px;
+					}
+					.money_chooser_item {
+						width: 100%;
+						cursor: pointer;
+						clear: both;
+						margin: 0px;
+						color: #FFFFFF;
+						border: thin solid #EFEFEF;
+						padding: 7px;
+						position: relative;
+						input[type=radio] {
+						position: absolute;
+						top: 0;
+						left: 0;
+						visibility: hidden;
+					}
+					.money_image {
+						width: 30%;
+						display: inline-block;
+						img {
+							width: 32px;
+						}
+					}
+					.money_content {
+						width: 70%;
+						display: inline;
+						span {
+							color: #000000;
+							margin-left: 15px;
+							line-height: 32px;
+							font-size: 16px;
+							vertical-align: bottom;
+						}
+					}
+					}
+					.money_chooser_item.selected {
+						border: 1px solid #428BCA;
+						background: lighten($header-bg, 65);
+						filter: alpha(opacity=100);
+						opacity: 1;
+					}
+				}
+			}
+		}
 	}
 }
-
 /*=============================================
 Box
 ==============================================*/
@@ -472,9 +543,24 @@ Box
 	margin: 0;
 	padding: 0;
 	.box-header {
+		position: relative;
 		background-color: $header-bg;
 		padding: 1px 10px;
 		color: #FFFFFF;
+		.link_va { 
+			color: #FDFDFD; 
+			font-size: 12px;
+			&:hover {
+				outline: thin solid #FFF;
+			}
+		}
+		.form-btn {
+			position: absolute;
+			top: 20px;
+			right: 10px;
+			padding: 5px;
+			width: 110px;
+		}
 	}
 	.box-body {
 		table {
@@ -508,7 +594,7 @@ Box
 		tbody td { border-bottom: 1px solid #DDDDDD; }
 
 		td:last-child {
-			text-align: right;
+			// text-align: right;
 			padding-right: 10px;
 		}
 
@@ -518,4 +604,87 @@ Box
 			vertical-align: middle;
 		}
 	}
+}
+
+/*=============================================
+Category
+==============================================*/
+.cat-wrapper {
+	.cat-header {
+		h3 {
+			font-size: 18px;
+		}
+	}
+	.cat-body {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				border-bottom: thin solid #EDEDED;
+				width: 90%;
+				> .has-sub {
+					display: none;
+				}
+			}
+			li > a {
+				display: block;
+				padding: 6px 0;
+				// padding-left: 30px;
+				color: #000;
+			}
+		}
+	}
+}
+
+/*=================================================================
+	BUTTON
+==================================================================*/
+.form-btn {
+	background-color: #FABA00;
+	width: 100px;
+	padding: 10px;
+	color: #946e00;
+	border: thin solid #e1a700;
+	font-size: 1.1rem;
+	border-radius: 3px;
+}
+
+.btn-wrapper {
+	margin: 10px 0;
+}
+
+
+/*=================================================================
+	MISCELLANEOUS
+==================================================================*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
+
+.hidden {
+	display: none;
 }

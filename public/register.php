@@ -1,4 +1,5 @@
 <?php require '../include/header.php'; ?>
+<?php require_once '../utilities/Country.php'; ?>
 <!-- start: PAGE -->
 <div class="container">
 	<!-- start: PAGE CONTENT -->
@@ -138,10 +139,9 @@
 									</label>
 									<div class="col-sm-7">
 										<select class="form-control" id="country" name="country">
-											<option value="">&nbsp;</option>
-											<option value="Country 1">Country 1</option>
-											<option value="Country 2">Country 2</option>
-											<option value="Country 3">Country 3</option>
+											<?php foreach (Country::all() as $name => $code): ?>
+												<option value="<?php echo $code; ?>"><?php echo $name; ?></option>
+											<?php endforeach; ?>	
 										</select>
 									</div>
 								</div>

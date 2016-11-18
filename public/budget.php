@@ -3,50 +3,10 @@
         <div class="row">
             <div class="col-md-12 col-lg-12">
                 <nav class="col-md-1 col-lg-1">
-                    <div class="menu-wrapper">
-                        <ul class="menu">
-                            <a href="dashboard.php">
-                                <li>
-                                    <i class="fa fa-home fa-2x"></i><br>
-                                    <span>Home</span>
-                                </li>
-                            </a>
-                            <a href="budget.php">
-                                <li class="active">
-                                    <i class="fa fa-money fa-2x"></i><br>
-                                    <span>Set a Budget</span>
-                                </li>
-                            </a>
-                            <a href="list_product.php">
-                                <li>
-                                    <i class="fa fa-plus fa-2x"></i><br>
-                                    <span>List Products</span>
-                                </li>
-                            </a>
-                            <a href="overview.php">
-                                <li>
-                                    <i class="fa fa-database fa-2x"></i><br>
-                                    <span>Products Overview</span>
-                                </li>
-                            </a>
-                            <a href="invoice.php">
-                                <li>
-                                    <i class="fa fa-file-o fa-2x"></i><br>
-                                    <span>Invoices</span>
-                                </li>
-                            </a>
-                            <a href="setting.php">
-                                <li>
-                                    <i class="fa fa-gear fa-2x"></i><br>
-                                    <span>Settings</span>
-
-                                </li>
-                            </a>
-                        </ul>
-                    </div> <!-- end menu wrapper -->
+                    <?php include '../include/dashboard_navigation.php'; ?>
                 </nav> <!-- end navigation -->
 
-                <div class="col-md-11 col-lg-11 no-margin no-padding">
+                <div class="col-md-11 col-lg-11" style="margin-left: -45px;">
                     <div class="col-md-12 col-lg-12">
                         <div class="row">
                             <div class="col-md-10 col-lg-10">
@@ -84,43 +44,37 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row">
-                                                    <div class="col-md-6 col-lg-6">
-                                                        <div class="form-group product-chooser">
-                                                            <div class="product-chooser-item">
-                                                                <div class="widget-info-img">
-                                                                    <img src="assets/images/cost_per_click2.png" alt="">
-                                                                </div>
-
-                                                                <div class="widget-info-desc">
-                                                                    <h4 class="title">Pay-per-click</h4>
-                                                                    <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam amet assumenda consequatur distinctio ducimus.</span>
-                                                                    <input type="radio" name="budget_type"
-                                                                           value="pay_per_click" checked>
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
+                                                <div class="budget-chooser">
+                                                    <div class="budget-chooser-item">
+                                                        <div class="widget-info-img">
+                                                            <img src="assets/images/cost_per_click2.png" alt="">
                                                         </div>
+
+                                                        <div class="widget-info-desc">
+                                                            <h4 class="title">Pay-per-click</h4>
+                                                            <span class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam amet assumenda consequatur distinctio ducimus.</span>
+                                                            <input type="radio" name="budget_type"
+                                                                   value="pay_per_click">
+                                                        </div>
+                                                        <div class="clear"></div>
                                                     </div>
-                                                    <div class="col-md-6 col-lg-6">
-                                                        <div class="form-group product-chooser">
-                                                            <div class="product-chooser-item">
-                                                                <div class="widget-info-img">
-                                                                    <img src="assets/images/cost_per_conversion.png"
-                                                                         alt="">
-                                                                </div>
-
-                                                                <div class="widget-info-desc">
-                                                                    <h4 class="title">Pay-per-conversion</h4>
-                                                                    <span class="description">
-                                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam amet assumenda consequatur distinctio ducimus.
-                                                                    </span>
-                                                                    <input type="radio" name="budget_type"
-                                                                           value="pay_per_conversion">
-                                                                </div>
-                                                                <div class="clear"></div>
-                                                            </div>
+                                                </div>
+                                                <div class="budget-chooser">
+                                                    <div class="budget-chooser-item">
+                                                        <div class="widget-info-img">
+                                                            <img src="assets/images/cost_per_conversion.png"
+                                                                 alt="">
                                                         </div>
+
+                                                        <div class="widget-info-desc">
+                                                            <h4 class="title">Pay-per-conversion</h4>
+                                                            <span class="description">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam amet assumenda consequatur distinctio ducimus.
+                                                            </span>
+                                                            <input type="radio" name="budget_type"
+                                                                   value="pay_per_conversion">
+                                                        </div>
+                                                        <div class="clear"></div>
                                                     </div>
                                                 </div>
 
@@ -132,7 +86,7 @@
                             <div class="col-md-5 col-lg-5">
                                 <div class="row">
                                     <div class="col-md-12 col-lg-12">
-                                        <div class="widget widget-wrapper">
+                                        <div class="widget widget-wrapper hidden">
                                             <div class="widget-header">
                                                 <h5>Budget Amount</h5>
                                             </div>
@@ -145,11 +99,119 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <div class="col-md-6 col-lg-6">
-
-                                                    </div>
-                                                    <div class="col-md-6 col-lg-6">
-
+                                                    <div class="col-md-12 col-lg-12">
+                                                        <ul class="money_container">
+                                                            <li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="20" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;20</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="40" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;40</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="60" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;60</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="80" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;80</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="100" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;100</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="200" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;200</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="400" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;400</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                    <div class="money_chooser_item">
+                                                                        <input type="radio" value="800" name="budget">
+                                                                        <div class="money_image">
+                                                                            <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                        </div>
+                                                                        <div class="money_content">
+                                                                            <span>GH&cent;800</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li><li>
+                                                                <div class="money_wrapper">
+                                                                   <div class="money_chooser_item">
+                                                                       <input type="radio" value="more" name="budget">
+                                                                       <div class="money_image">
+                                                                           <img src="assets/images/money_bag.png" alt="Cedi Icon">
+                                                                       </div>
+                                                                       <div class="money_content">
+                                                                           <span>More</span>
+                                                                       </div>
+                                                                   </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
 
@@ -157,6 +219,12 @@
                                         </div> <!-- end col-md-5 col-lg-5 -->
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="btn-wrapper">
+                                    <button class="form-btn hidden" id="submit-btn" type="button">Submit</button></div>
                             </div>
                         </div>
                     </div>

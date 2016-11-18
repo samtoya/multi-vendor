@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
 <!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
 <!--[if !IE]><!-->
@@ -45,3 +45,5 @@
 	<!-- PHP Configuration -->
 	<?php # ini_set('short_open_tag', 0); ?>
 	<?php require '../include/navigation.php'; ?>
+	<!-- Autoload PHP Classes -->
+	<?php require '../vendor/fzaninotto/faker/src/autoload.php'; ?>

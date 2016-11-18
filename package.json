@@ -1,0 +1,18 @@
+{
+  "name": "multi-vendor",
+  "version": "1.0.0",
+  "description": "A PriceDrummer Project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cujo3/multi-vendor.git"
+  },
+  "author": "Akitoye Joseph",
+  "bugs": {
+    "url": "https://github.com/cujo3/multi-vendor/issues"
+  },
+  "homepage": "https://github.com/cujo3/multi-vendor#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}
